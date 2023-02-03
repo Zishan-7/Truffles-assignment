@@ -1,9 +1,14 @@
 import React from "react";
 import Image from "next/image";
 import Logo from "../../assets/logo.png";
+import Balance from "../../assets/balance.png";
+import DownArrow from "../../assets/downArrow.png";
+import UpArrow from "../../assets/upArrow.png";
 import Card from "./Card";
 import GraphComponent from "./GraphComponent";
 import PriceCard from "./PriceCard";
+import Calender from "./Calender";
+
 const HomePage = () => {
   return (
     <div className="min-h-[100vh] grid grid-cols-5 bg-[#f8f9fa] pb-10">
@@ -57,17 +62,20 @@ const HomePage = () => {
 
         <div className="grid h-[70vh] grid-cols-3 gap-6 my-10">
           <div className="col-span-2 h-1/2 grid grid-cols-2 gap-6 bg-[#f8f9fa]rounded-lg ">
-            <Card />
-            <Card />
-            <Card />
-            <Card />
+           
+            <Card icon={Balance} title={"Fiat Balance"} />
+            <Card icon={Balance} title="Crypto Balance"/>
+            <Card icon={DownArrow} title="Receivable"/>
+            <Card icon={UpArrow} title="Payables" />
             <div className="col-span-2">
               <GraphComponent />{" "}
             </div>
           </div>
-          <div className="drop-shadow-md bg-white rounded-xl ">
+          <div className="drop-shadow-md bg-white rounded-xl "> <Calender/>
             <PriceCard name="Quicksilver" id={71687681} price={"145000"} />
             <PriceCard name="Bitcoin" id={8398833} price={"145000"} />
+            <PriceCard name="Quicksilver" id={71687681} price={"145000"} />
+            <PriceCard name="Quicksilver" id={71687681} price={"145000"} />
             <PriceCard name="Quicksilver" id={71687681} price={"145000"} />
             <PriceCard name="Quicksilver" id={71687681} price={"145000"} />
           </div>
