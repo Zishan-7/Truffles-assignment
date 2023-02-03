@@ -51,7 +51,7 @@ const pdata = [
 
 const GraphComponent = () => {
   return (
-    <div className="bg-white drop-shadow-lg w-full h-[50vh] rounded-lg flex flex-col py-5">
+    <div className="bg-white drop-shadow-lg w-full h-[60vh] rounded-lg flex flex-col py-5">
       <h1 className="mx-8 mb-10 text-[#67748E]">Assets & Liabilities</h1>
       <ResponsiveContainer width="100%">
         <LineChart data={pdata}>

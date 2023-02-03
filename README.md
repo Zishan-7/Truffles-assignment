@@ -1,3 +1,5 @@
+## Deployed app [https://truffles-assignment.vercel.app/](link)
+
 ## Getting Started
 
 First, install the dependencies & run the development server :
