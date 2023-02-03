@@ -3,6 +3,7 @@ import Image from "next/image";
 import Logo from "../../assets/logo.png";
 import Card from "./Card";
 import GraphComponent from "./GraphComponent";
+import PriceCard from "./PriceCard";
 const HomePage = () => {
   return (
     <div className="min-h-[100vh] grid grid-cols-5 bg-[#f8f9fa] pb-10">
@@ -28,6 +29,13 @@ const HomePage = () => {
         </div>
         <div className="w-[80%] h-10 my-5 rounded-md ">
           <p className="text-[#252F40]">Proforma</p>
+        </div>
+        <div className="w-[80%] h-10 my-5 rounded-md ">
+          <p className="text-[#252F40]">Swap</p>
+        </div> <div className="w-[80%] h-10 my-5 rounded-md ">
+          <p className="text-[#252F40]">Transfer</p>
+        </div> <div className="w-[80%] h-10 my-5 rounded-md ">
+          <p className="text-[#252F40]">Contacts</p>
         </div>
       </div>
 
@@ -57,7 +65,12 @@ const HomePage = () => {
               <GraphComponent />{" "}
             </div>
           </div>
-          <div className="drop-shadow-md bg-white rounded-xl "></div>
+          <div className="drop-shadow-md bg-white rounded-xl ">
+            <PriceCard name="Quicksilver" id={71687681} price={"145000"} />
+            <PriceCard name="Bitcoin" id={8398833} price={"145000"} />
+            <PriceCard name="Quicksilver" id={71687681} price={"145000"} />
+            <PriceCard name="Quicksilver" id={71687681} price={"145000"} />
+          </div>
         </div>
       </div>
     </div>

@@ -19,7 +19,7 @@ const Stepper = ({
             isVisitedStep ? "bg-[#7445F8]" : "bg-[#FFFFFF]"
           }  rounded-full -left-4 ring-2 ${
             isActiveStep || isVisitedStep ? "ring-[#7445F8]" : "ring-[#D1D5DB]"
-          } ring-white`}
+          } `}
         >
           {isVisitedStep && (
             <svg
