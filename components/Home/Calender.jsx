@@ -1,15 +1,15 @@
 import React, { useState } from "react";
-import 'react-calendar/dist/Calendar.css';
+// import "./calender.css";
 
-import Calendar from 'react-calendar';
+import Calendar from "react-calendar";
 
 const Calender = () => {
-    const [value, onChange] = useState(new Date());
+  const [value, onChange] = useState(new Date());
   return (
-    <div className="w-full">
-    <Calendar style={{"width":"100%"}} onChange={onChange} value={value} />
-  </div>
-  )
-}
+    <div className="w-full p-4 ">
+      <Calendar className={"border-none"} onChange={onChange} value={value} />
+    </div>
+  );
+};
 
-export default Calender
+export default Calender;
