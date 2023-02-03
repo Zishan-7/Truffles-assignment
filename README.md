@@ -1,4 +1,4 @@
-## Deployed app [https://truffles-assignment.vercel.app/](link)
+## Deployed app [link](https://truffles-assignment.vercel.app/)
 
 ## Getting Started
 
